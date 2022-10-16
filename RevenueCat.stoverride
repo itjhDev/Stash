@@ -7,11 +7,11 @@ http:
     - 'api.revenuecat.com'
   script:
     - match: ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$)
-      name: RevenueCat多合一脚本
+      name: RevenueCat
       type: request
       require-body: false
       timeout: 10
 script-providers:
-  RevenueCat多合一脚本:
+  RevenueCat:
     url: https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/revenuecat.js
     interval: 86400

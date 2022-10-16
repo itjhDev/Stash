@@ -4,7 +4,7 @@ http:
   mitm:
     - 'nomo.dafork.com'
   script:
-    - match: ^https?:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_verify$
+    - match: ^https?:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_verify
       name: NoMoCamProCrack
       type: request
       require-body: false
