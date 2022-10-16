@@ -7,7 +7,7 @@ http:
     - match: ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll)
       name: claritywallpaper
       type: request
-      require-body: false
+      require-body: true
       timeout: 10
 script-providers:
   claritywallpaper:
