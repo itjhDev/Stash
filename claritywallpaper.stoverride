@@ -1,0 +1,15 @@
+name: 克拉壁纸
+desc: 克拉壁纸
+http:
+  mitm:
+    - 'claritywallpaper.com'
+  script:
+    - match: ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll)
+      name: claritywallpaper
+      type: request
+      require-body: false
+      timeout: 10
+script-providers:
+  claritywallpaper:
+    url: https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/clarity.js
+    interval: 86400

@@ -1,0 +1,17 @@
+name: RevenueCat多合一脚本
+desc: 解锁财新文章阅读与音频限制@Cuttlefish Pixelmator、Planny、Gear、图图记账、Aphrodite、Apollo、MoneyThings、目标地图、Audiomack
+1Blocker、Scanner Pro、Darkroom、谜底时钟、Pillow、VSCO、Grow、WhiteCloud、Fin、奇妙组件
+Widgetsmith、vision、Percento、Airmail、Usage、Spark、Pdf Viewer、谜底黑胶
+http:
+  mitm:
+    - 'api.revenuecat.com'
+  script:
+    - match: ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$)
+      name: RevenueCat多合一脚本
+      type: request
+      require-body: false
+      timeout: 10
+script-providers:
+  RevenueCat多合一脚本:
+    url: https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/revenuecat.js
+    interval: 86400
